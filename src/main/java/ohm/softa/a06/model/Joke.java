@@ -1,5 +1,6 @@
 package ohm.softa.a06.model;
 
+import com.google.gson.annotations.SerializedName;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -13,8 +14,11 @@ import java.util.List;
  */
 public final class Joke {
 
+	@SerializedName(value = "id")
 	private String identifier;
+	@SerializedName(value = "value")
 	private String content;
+	@SerializedName(value = "categories")
 	private List<String> rubrics;
 
 
